@@ -45,12 +45,12 @@
     <main>
         <div class="container tickets p-0  ">
             <div class="row tickets_cajas m-0">
-                <div class="col-md-4 p-1 ">
+                <div class="col-md-4 p-1 "  >
                     <div class="border border-info">
                         <h4 class="m-0">Estudiante</h3>
-                        <p class="m-0">Tienen un descuento</p>
-                        <h5 class="m-0 porcentaje">80%</h5>
-                        <p class="m-0 documento">*presentar documentación</p>
+                            <p class="m-0">Tienen un descuento</p>
+                            <h5 class="m-0 porcentaje">80%</h5>
+                            <p class="m-0 documento">*presentar documentación</p>
 
                     </div>
 
@@ -58,9 +58,9 @@
                 <div class="col-md-4 p-1">
                     <div class="border border-info">
                         <h4 class="m-0">Trainee</h3>
-                        <p class="m-0">Tienen un descuento</p>
-                        <h5 class="m-0 porcentaje">50%</h5>
-                        <p class="m-0 documento">*presentar documentación</p>
+                            <p class="m-0">Tienen un descuento</p>
+                            <h5 class="m-0 porcentaje">50%</h5>
+                            <p class="m-0 documento">*presentar documentación</p>
 
                     </div>
 
@@ -70,7 +70,7 @@
                     <div class="border border-warning">
                         <h4 class="m-0">Junior</h4>
                         <p class="m-0">Tienen un descuento</p>
-                        <h5 class="m-0 porcentaje">15%</h5>
+                        <h5 class="m-0 porcentaje" >15%</h5>
                         <p class="m-0 documento">*presentar documentación</p>
 
                     </div>
@@ -81,7 +81,7 @@
 
             <form action="" class="formulario p-1">
 
-                <h1 class="text-center mb-3">VALOR DE TICKET $200</h1>
+                <h1 class="text-center mb-3">VALOR DE TICKET $ <span id="precio" >200</span></h1>
 
                 <input class="nombre" type="text" placeholder="Nombre">
                 <input class="apellido" type="text" placeholder="Apellido">
@@ -98,18 +98,18 @@
                         </div>
                     </div>
                 </div>
-                <input class="cantidad" type="text" placeholder="cantidad">
+                <input class="cantidad" type="text" placeholder="cantidad" id="cantidad">
 
-                <select class="categoria" name="" id="">
+                <select class="categoria" name="" id="categoria" onchange="seleccionarCategoria()">
 
-                    <option value="">Estudiante</option>
-                    <option value="">Trainee</option>
-                    <option value="">Junior</option>
+                    <option value="0.8">Estudiante</option>
+                    <option value="0.5">Trainee</option>
+                    <option value="0.15">Junior</option>
                 </select>
 
-                <button class="pagar border border-light">Total a Pagar: $</button>
-                <button class="borrar">Borrar</button>
-                <button class="resumen">Resumen</button>
+                <button class="pagar border border-light" type="button">Total a Pagar: $ <span id="total"></span></button>
+                <button class="borrar" type="reset" id="borrar">Borrar</button>
+                <button class="resumen" type="button" id="resumen">Resumen</button>
             </form>
         </div>
     </main>
@@ -131,7 +131,7 @@
     </div>
     <!-- FINAL-FOOTER -->
 
-
+    <script src="./js/navFot.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
     </script>
