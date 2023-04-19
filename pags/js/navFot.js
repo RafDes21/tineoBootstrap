@@ -1,4 +1,4 @@
-// Con esta función obtenemos el valor de descuento
+// Con esta función obtenemos el valor de descuento.
 function seleccionarCategoria() {
     const categoria = document.getElementById("categoria")
     const select = parseFloat(categoria.value) 
